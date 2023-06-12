@@ -20,79 +20,36 @@ let content = `
 </section>
 
 
-<!-- Products section -->
+<!-- About and featured -->
 
 
-
-<h1 id="products" class="text-center">Products</h1>
+<h1  class="text-center">About Us</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit soluta doloribus consectetur quasi, asperiores atque consequuntur minima corrupti sequi voluptatibus, at inventore deleniti eveniet vitae sit voluptatum mollitia accusantium earum.</p>
+<h1 id="products" class="text-center">Featured</h1>
 <div class="row mt-5">
-    <div class="col-lg-4">
-        <img src="path_to_your_image" alt="item image" class="img-fluid">
+    <div class="col-lg-4 text-center">
+        <img src="https://i.postimg.cc/1tLCmqcQ/Alesso-Platinum-Coffee-Beans-1kg-Decaf.webp" alt="item image" class="img-fluid">
         <h3>Item Title</h3>
         <p>Item Description</p>
-        <p class="text-primary">$9.99</p>
+        <p class="text-primary">R285.00</p>
     </div>
     
-    <div class="col-lg-4">
-        <img src="path_to_your_image" alt="item image" class="img-fluid">
+    <div class="col-lg-4 text-center">
+        <img src="https://i.postimg.cc/2y74sb0T/Alesso-Platinum-Coffee-Beans-1-kg-Argento-Italian-Espresso.webp" alt="item image" class="img-fluid">
         <h3>Item Title</h3>
         <p>Item Description</p>
-        <p class="text-primary">$14.99</p>
+        <p class="text-primary">R269.00</p>
     </div>
     
-    <div class="col-lg-4">
-        <img src="path_to_your_image" alt="item image" class="img-fluid">
+    <div class="col-lg-4 text-center">
+        <img src="https://i.postimg.cc/PJjWVzQP/Alesso-Platinum-Coffee-Beans-1-kg-Argento-Italian-Espresso.webp" class="img-fluid">
         <h3>Item Title</h3>
         <p>Item Description</p>
-        <p class="text-primary">$19.99</p>
+        <p class="text-primary">R310.00</p>
     </div>
 </div>
 
-<div class="row mt-5">
-    <div class="col-lg-4">
-        <img src="path_to_your_image" alt="item image" class="img-fluid">
-        <h3>Item Title</h3>
-        <p>Item Description</p>
-        <p class="text-primary">$9.99</p>
-    </div>
-    
-    <div class="col-lg-4">
-        <img src="path_to_your_image" alt="item image" class="img-fluid">
-        <h3>Item Title</h3>
-        <p>Item Description</p>
-        <p class="text-primary">$14.99</p>
-    </div>
-    
-    <div class="col-lg-4">
-        <img src="path_to_your_image" alt="item image" class="img-fluid">
-        <h3>Item Title</h3>
-        <p>Item Description</p>
-        <p class="text-primary">$19.99</p>
-    </div>
-</div>
 
-<div class="row mt-5">
-    <div class="col-lg-4">
-        <img src="path_to_your_image" alt="item image" class="img-fluid">
-        <h3>Item Title</h3>
-        <p>Item Description</p>
-        <p class="text-primary">$9.99</p>
-    </div>
-    
-    <div class="col-lg-4">
-        <img src="path_to_your_image" alt="item image" class="img-fluid">
-        <h3>Item Title</h3>
-        <p>Item Description</p>
-        <p class="text-primary">$14.99</p>
-    </div>
-    
-    <div class="col-lg-4">
-        <img src="path_to_your_image" alt="item image" class="img-fluid">
-        <h3>Item Title</h3>
-        <p>Item Description</p>
-        <p class="text-primary">$19.99</p>
-    </div>
-</div>
 
 `;
 landElement.innerHTML = content;
