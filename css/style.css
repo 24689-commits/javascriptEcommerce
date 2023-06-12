@@ -1,6 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 h1{
-    color: antiquewhite;
+    color: black;
 }
 p{
-    color: antiquewhite;
+    color: rgb(103, 125, 135);
+}
+#prod{
+    position: relative;
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+#prod img{
+    width: 400px;
+    height: 200px;
+    right: 0;
+    bottom: 0;
 }
