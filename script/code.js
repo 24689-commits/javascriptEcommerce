@@ -29,22 +29,22 @@ let content = `
 <div class="row mt-5">
     <div class="col-lg-4 text-center">
         <img src="https://i.postimg.cc/1tLCmqcQ/Alesso-Platinum-Coffee-Beans-1kg-Decaf.webp" alt="item image" class="img-fluid">
-        <h3>Item Title</h3>
-        <p>Item Description</p>
+        <h3>DECAF</h3>
+        <p>Nutty, caramel Round Body</p>
         <p class="text-primary">R285.00</p>
     </div>
     
     <div class="col-lg-4 text-center">
         <img src="https://i.postimg.cc/2y74sb0T/Alesso-Platinum-Coffee-Beans-1-kg-Argento-Italian-Espresso.webp" alt="item image" class="img-fluid">
-        <h3>Item Title</h3>
-        <p>Item Description</p>
+        <h3>ARGENTO</h3>
+        <p>Cherry, Juicy, Creamy, Cocoa, Nutty</p>
         <p class="text-primary">R269.00</p>
     </div>
     
     <div class="col-lg-4 text-center">
         <img src="https://i.postimg.cc/PJjWVzQP/Alesso-Platinum-Coffee-Beans-1-kg-Argento-Italian-Espresso.webp" class="img-fluid">
-        <h3>Item Title</h3>
-        <p>Item Description</p>
+        <h3>ARGENTO Expresso</h3>
+        <p>Cherry, Juicy, Creamy, Cocoa, Nutty</p>
         <p class="text-primary">R310.00</p>
     </div>
 </div>

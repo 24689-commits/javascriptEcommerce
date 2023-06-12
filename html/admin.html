@@ -23,7 +23,7 @@
                 <a class="nav-link" aria-current="page" href="../index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./html/products.html">Products</a>
+                <a class="nav-link" aria-current="page" href="./products.html">Products</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./checkout.html">Checkout</a>
@@ -31,12 +31,56 @@
               <li class="nav-item">
                 <a class="nav-link active" href="./admin.html">Admin</a>
               </li>
+
+
+              
+              
+              
               
           </div>
         </div>
       </nav>
-    
 
+
+      <!-- table -->
+
+      <!-- Add a button to open the modal -->
+<button onclick="openModal()">Add Item</button>
+
+<!-- The table -->
+<table id="tblAdmin">
+  <thead>
+    <tr>
+      <th>#id</th>
+      <th>Image</th>
+      <th>Description</th>
+      <th>Price</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Table rows will be dynamically added here -->
+  </tbody>
+</table>
+
+<!-- The modal -->
+<div id="modal" style="display: none;">
+  <h2>Add Item</h2>
+  <label for="itemId">ID:</label>
+  <input type="text" id="itemId"><br><br>
+  <label for="itemImage">Image:</label>
+  <input type="text" id="itemImage"><br><br>
+  <label for="itemDescription">Description:</label>
+  <input type="text" id="itemDescription"><br><br>
+  <label for="itemPrice">Price:</label>
+  <input type="text" id="itemPrice"><br><br>
+  <button onclick="addItem()">Add</button>
+  <button onclick="closeModal()">Cancel</button>
+</div>
+    
+<footer>
+  <p>copyright &copy; 2023</p>
+</footer>
     <!-- bootstrap script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <!-- js script -->
