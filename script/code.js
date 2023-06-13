@@ -24,7 +24,7 @@ let content = `
 
 
 <h1  class="text-center">About Us</h1>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit soluta doloribus consectetur quasi, asperiores atque consequuntur minima corrupti sequi voluptatibus, at inventore deleniti eveniet vitae sit voluptatum mollitia accusantium earum.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit soluta doloribus consectetur quasi, asperiores atque consequuntur minima corrupti sequi voluptatibus, at inventore deleniti eveniet vitae sit voluptatum mollitia accusantium earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit soluta doloribus consectetur quasi, asperiores atque consequuntur minima corrupti sequi voluptatibus, at inventore deleniti eveniet vitae sit voluptatum mollitia accusantium earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit soluta doloribus consectetur quasi, asperiores atque consequuntur minima corrupti sequi voluptatibus, at inventore deleniti eveniet vitae sit voluptatum mollitia accusantium earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit soluta doloribus consectetur quasi, asperiores atque consequuntur minima corrupti sequi voluptatibus, at inventore deleniti eveniet vitae sit voluptatum mollitia accusantium earum.</p>
 <h1 id="products" class="text-center">Featured</h1>
 <div class="row mt-5">
     <div class="col-lg-4 text-center">

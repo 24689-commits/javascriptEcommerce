@@ -11,10 +11,10 @@ function closeModal() {
 // Function to generate a new ID for an item
 function generateItemId() {
   // Retrieve the last stored ID from local storage
-  var lastItemId = localStorage.getItem("lastItemId");
+  let lastItemId = localStorage.getItem("lastItemId");
 
   // Generate a new ID based on the last stored ID
-  var newItemId = lastItemId ? parseInt(lastItemId) + 1 : 1;
+  let newItemId = lastItemId ? parseInt(lastItemId) + 1 : 1;
 
   // Update the lastItemId in local storage
   localStorage.setItem("lastItemId", newItemId);
@@ -25,23 +25,23 @@ function generateItemId() {
 // Function to add an item to the table and Local Storage
 function addItem() {
   // Get the input values from the modal
-  var itemImage = document.getElementById("itemImage").value;
-  var itemDescription = document.getElementById("itemDescription").value;
-  var itemPrice = document.getElementById("itemPrice").value;
+  let itemImage = document.getElementById("itemImage").value;
+  let itemDescription = document.getElementById("itemDescription").value;
+  let itemPrice = document.getElementById("itemPrice").value;
 
   // Generate a new ID for the item
-  var itemId = generateItemId();
+  let itemId = generateItemId();
 
   // Create a new table row
-  var table = document.getElementById("tblAdmin");
-  var newRow = table.insertRow(table.rows.length);
+  let table = document.getElementById("tblAdmin");
+  let newRow = table.insertRow(table.rows.length);
 
   // Insert cells into the new row
-  var cellId = newRow.insertCell(0);
-  var cellImage = newRow.insertCell(1);
-  var cellDescription = newRow.insertCell(2);
-  var cellPrice = newRow.insertCell(3);
-  var cellAction = newRow.insertCell(4);
+  let cellId = newRow.insertCell(0);
+  let cellImage = newRow.insertCell(1);
+  let cellDescription = newRow.insertCell(2);
+  let cellPrice = newRow.insertCell(3);
+  let cellAction = newRow.insertCell(4);
 
   // Set the cell values
   cellId.innerHTML = itemId;
@@ -64,14 +64,14 @@ function addItem() {
 
 // Function to edit an item in the table and Local Storage
 function editItem(button) {
-  var row = button.parentNode.parentNode;
-  var cells = row.getElementsByTagName("td");
+  let row = button.parentNode.parentNode;
+  let cells = row.getElementsByTagName("td");
 
   // Get the cell values
-  var itemId = cells[0].innerHTML;
-  var itemImage = cells[1].innerHTML;
-  var itemDescription = cells[2].innerHTML;
-  var itemPrice = cells[3].innerHTML;
+  let itemId = cells[0].innerHTML;
+  let itemImage = cells[1].innerHTML;
+  let itemDescription = cells[2].innerHTML;
+  let itemPrice = cells[3].innerHTML;
 
   // Set the input values in the modal
   document.getElementById("itemId").value = itemId;
@@ -88,8 +88,8 @@ function editItem(button) {
 
 // Function to delete an item from the table and Local Storage
 function deleteItem(button) {
-  var row = button.parentNode.parentNode;
-  var itemId = row.cells[0].innerHTML;
+  let row = button.parentNode.parentNode;
+  let itemId = row.cells[0].innerHTML;
 
   // Remove the row from the table
   row.parentNode.removeChild(row);
@@ -101,11 +101,11 @@ function deleteItem(button) {
 // Function to save an item to Local Storage
 function saveItemToLocalStorage(itemId, itemImage, itemDescription, itemPrice) {
   // Retrieve existing item data from Local Storage
-  var items = localStorage.getItem("items");
-  var itemList = items ? JSON.parse(items) : [];
+  let items = localStorage.getItem("items");
+  let itemList = items ? JSON.parse(items) : [];
 
   // Create a new item object
-  var newItem = {
+  let newItem = {
     itemId: itemId,
     itemImage: itemImage,
     itemDescription: itemDescription,
@@ -122,11 +122,11 @@ function saveItemToLocalStorage(itemId, itemImage, itemDescription, itemPrice) {
 // Function to remove an item from Local Storage
 function removeItemFromLocalStorage(itemId) {
   // Retrieve existing item data from Local Storage
-  var items = localStorage.getItem("items");
-  var itemList = items ? JSON.parse(items) : [];
+  let items = localStorage.getItem("items");
+  let itemList = items ? JSON.parse(items) : [];
 
   // Find the index of the item to remove
-  var index = itemList.findIndex(function(item) {
+  let index = itemList.findIndex(function(item) {
     return item.itemId === itemId;
   });
 
@@ -142,21 +142,21 @@ function removeItemFromLocalStorage(itemId) {
 // Function to initialize the table with items from Local Storage
 function initializeTable() {
   // Retrieve existing item data from Local Storage
-  var items = localStorage.getItem("items");
-  var itemList = items ? JSON.parse(items) : [];
+  let items = localStorage.getItem("items");
+  let itemList = items ? JSON.parse(items) : [];
 
-  var table = document.getElementById("tblAdmin");
+  let table = document.getElementById("tblAdmin");
 
   // Iterate over the item list and populate the table
   itemList.forEach(function(item) {
-    var newRow = table.insertRow(table.rows.length);
+    let newRow = table.insertRow(table.rows.length);
 
     // Insert cells into the new row
-    var cellId = newRow.insertCell(0);
-    var cellImage = newRow.insertCell(1);
-    var cellDescription = newRow.insertCell(2);
-    var cellPrice = newRow.insertCell(3);
-    var cellAction = newRow.insertCell(4);
+    let cellId = newRow.insertCell(0);
+    let cellImage = newRow.insertCell(1);
+    let cellDescription = newRow.insertCell(2);
+    let cellPrice = newRow.insertCell(3);
+    let cellAction = newRow.insertCell(4);
 
     // Set the cell values
     cellId.innerHTML = item.itemId;
