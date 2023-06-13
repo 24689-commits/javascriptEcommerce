@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
         let prod = document.getElementById("prod");
         let products = [
+            //Sample item listings
             {
                 id: 1,
                 name: 'DECAF',
@@ -71,8 +72,8 @@ document.addEventListener("DOMContentLoaded", function() {
     
         products.forEach((product) => {
             prod.innerHTML += `
-            <div class="card text-center" style="width: 100%;">
-                <img src="${product.image}" class="card-img-top" alt="Product Image">
+            <div class="card text-center" style="width: 18rem;">
+                <img src="${product.image}" class="card-img-top" alt="Product Image" loading='lazy'>
                 <div class="card-body">
                     <h5 class="card-title text-center"> ${product.name}</h5>
                     <p class="card-text text-center">${product.description}</p>
@@ -85,17 +86,17 @@ document.addEventListener("DOMContentLoaded", function() {
         // Get the modal element
         let checkoutModal = document.getElementById("checkoutModal");
     
-        // Add to Cart button click event
+        // Add to Cart button
         let addToCartButtons = document.querySelectorAll(".btn.btn-primary[data-bs-toggle='modal']");
         addToCartButtons.forEach((button) => {
             button.addEventListener("click", function() {
-                // Perform the checkout logic here
-                // You can show a success message, update the cart, etc.
+                
     
-                // Close the modal after checkout
+                // Closing modal after checkout
                 let modalInstance = bootstrap.Modal.getInstance(checkoutModal);
                 modalInstance.hide();
             });
         });
     });
+    
     

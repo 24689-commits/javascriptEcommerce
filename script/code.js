@@ -2,7 +2,7 @@ let landElement = document.getElementById("land");
 
 // Landing page
 let content = `
-<section class="bg-light d-flex align-items-center justify-content-center" style="background-image: url('https://i.postimg.cc/jqyXpq8p/background-kofu.jpg'); background-size: cover; background-position: center;">
+<section class="bg-light d-flex align-items-center justify-content-center" style="background-image: url('https://i.postimg.cc/jqyXpq8p/background-kofu.jpg'); background-size: cover; background-position: center; loading='lazy' ">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center">
@@ -10,7 +10,7 @@ let content = `
                 <p class="lead">Cinga into eCatchy bra oyhini</p>
                 <p class="lead">Lorem Ipsum dolor sit amet. Lorem Ipsum dolor sit amet.</p>
                 <p class="lead">Lorem Ipsum dolor sit amet. Lorem Ipsum dolor sit amet.</p>
-                <p><a href="#products" class="btn btn-primary shadow mr-2">Shop Now!!</a></p>
+                <p><a href="#about" class="btn btn-primary shadow mr-2">About Us</a></p>
             </div>
             <div class="col-lg-6 order-1 order-lg-2 d-flex justify-content-center align-items-center">
                 <img src="https://i.postimg.cc/pLFtvHzg/Coffee-1.jpg" alt="landing image" class="img-fluid">
@@ -23,7 +23,7 @@ let content = `
 <!-- About and featured -->
 
 
-<h1  class="text-center">About Us</h1>
+<h1  class="text-center" id='about'>About Us</h1>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit soluta doloribus consectetur quasi, asperiores atque consequuntur minima corrupti sequi voluptatibus, at inventore deleniti eveniet vitae sit voluptatum mollitia accusantium earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit soluta doloribus consectetur quasi, asperiores atque consequuntur minima corrupti sequi voluptatibus, at inventore deleniti eveniet vitae sit voluptatum mollitia accusantium earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit soluta doloribus consectetur quasi, asperiores atque consequuntur minima corrupti sequi voluptatibus, at inventore deleniti eveniet vitae sit voluptatum mollitia accusantium earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit soluta doloribus consectetur quasi, asperiores atque consequuntur minima corrupti sequi voluptatibus, at inventore deleniti eveniet vitae sit voluptatum mollitia accusantium earum.</p>
 <h1 id="products" class="text-center">Featured</h1>
 <div class="row mt-5">
