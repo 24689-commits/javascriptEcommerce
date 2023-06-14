@@ -24,7 +24,13 @@ let content = `
 
 
 <h1  class="text-center" id='about'>About Us</h1>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit soluta doloribus consectetur quasi, asperiores atque consequuntur minima corrupti sequi voluptatibus, at inventore deleniti eveniet vitae sit voluptatum mollitia accusantium earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit soluta doloribus consectetur quasi, asperiores atque consequuntur minima corrupti sequi voluptatibus, at inventore deleniti eveniet vitae sit voluptatum mollitia accusantium earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit soluta doloribus consectetur quasi, asperiores atque consequuntur minima corrupti sequi voluptatibus, at inventore deleniti eveniet vitae sit voluptatum mollitia accusantium earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit soluta doloribus consectetur quasi, asperiores atque consequuntur minima corrupti sequi voluptatibus, at inventore deleniti eveniet vitae sit voluptatum mollitia accusantium earum.</p>
+<p>Our coffee shop is dedicated to providing the highest quality coffee experience to our customers. We source our coffee beans from the finest coffee-growing regions around the world and carefully roast them to bring out their unique flavors and aromas. <br> <br>
+
+At our coffee shop, we believe in the art of coffee-making. Our skilled baristas are passionate about their craft and strive to create the perfect cup of coffee every time. Whether you prefer a rich and bold espresso or a smooth and creamy cappuccino, we have a wide selection of specialty coffee beverages to satisfy your cravings.<br> <br>
+
+But it's not just about the coffee. We also take pride in creating a welcoming and cozy atmosphere for our customers. Our coffee shop is designed to be a gathering place for coffee lovers, where you can relax, socialize, or catch up on work while enjoying your favorite brew.<br> <br>
+
+Join us at our coffee shop and embark on a journey of taste and discovery. Experience the warmth of our hospitality, the aroma of freshly brewed coffee, and the joy of a truly exceptional coffee experience.</p>
 <h1 id="products" class="text-center">Featured</h1>
 <div class="row mt-5">
     <div class="col-lg-4 text-center">
