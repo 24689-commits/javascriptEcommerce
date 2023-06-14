@@ -15,7 +15,7 @@ p{
     gap: 1rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    
+    max-width: 100%;
   }
 
 #prod img{
@@ -33,6 +33,37 @@ p{
   padding-top: 2rem;
   padding-bottom: 1rem;
 }
+
+#prod .card {
+  padding: 3rem;
+  border: none;
+  width: 18rem;
+  margin-bottom: 20px;
+}
+
+#prod .card .card-img-top {
+  height: 250px;
+  object-fit: contain;
+}
+
+#prod .card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#prod .card .card-text {
+  margin-bottom: 10px;
+}
+
+/* Center the modal content */
+.modal-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 
 
 
@@ -115,6 +146,9 @@ p{
     align-items: center;
     background-color: wheat;
   }
+  #navv, #land, footer {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
 
 
   /*home  */
@@ -137,3 +171,16 @@ p{
   .containerr{
     background-color: rgb(147, 131, 112);
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
