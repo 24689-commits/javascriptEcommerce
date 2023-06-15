@@ -31,9 +31,6 @@
               <li class="nav-item">
                 <a class="nav-link" href="./html/admin.html">Admin</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contactUsModal">Contact Us</a>
-              </li>
             </ul>
           </div>
         </div>
@@ -44,24 +41,34 @@
   
   
   <!-- Contact Us Modal -->
-  <div class="modal fade" id="contactUsModal" tabindex="-1" aria-labelledby="contactUsModalLabel" aria-hidden="true">
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Contact Us</button>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="contactUsModalLabel">Contact Us</h5>
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Contact Form</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <p>For any inquiries or assistance, please contact us using the information provided below:</p>
-          <ul>
-            <li>Email: apgrains@gmail.com</li>
-            <li>Phone: 021-456-7890</li>
-            <li>Address: 123 Bree Street, Cape Town, South Africa</li>
-          </ul>
+          <form action="https://formspree.io/f/xpzevrlq" method="post">
+            <div class="mb-3">
+              <label for="full-name" class="col-form-label">Name and Surname</label>
+              <input type="text" class="form-control" id="fullname-name" name="fullname"  required>
+            </div>
+            <div class="mb-3">
+              <label for="email-name" class="col-form-label">Email address</label>
+              <input type="email" class="form-control" id="@gmail-name" name="email" required >
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">Message:</label>
+              <textarea class="form-control" name="message" id="message-text" placeholder="Write something" required></textarea>
+            </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" name="close">Close</button>
+          <button type="submit" class="btn btn-primary" name="send">Send message</button>
         </div>
+      </form>
       </div>
     </div>
   </div>
