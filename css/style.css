@@ -198,45 +198,29 @@ p{
     background: #fafafa;
     font-family: "Patua One", sans-serif;
 }
-.contact-form {
-    padding: 50px;
-    margin: 30px 0;
+.checkout-table {
+  width: 100%;
+  margin-bottom: 20px;
 }
-.contact-form h1 {
-    color: #19bc9d;
-    font-weight: bold;
-    margin: 0 0 15px;
+.checkout-table table {
+  width: 100%;
+  border-collapse: collapse;
 }
-.contact-form .form-control, .contact-form .btn {
-    min-height: 38px;
-    border-radius: 2px;
+.checkout-table th,
+.checkout-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
 }
-.contact-form .form-control:focus {
-    border-color: #19bc9d;
+.checkout-table th {
+  background-color: #F5F5F5;
+  font-weight: bold;
 }
-.contact-form .btn-primary, .contact-form .btn-primary:active {
-    color: #fff;
-    min-width: 150px;
-    font-size: 16px;
-    background: #19bc9d !important;
-    border: none;
+.checkout-table tfoot td {
+  font-weight: bold;
 }
-.contact-form .btn-primary:hover {
-    background: #15a487 !important; 
-}
-.contact-form .btn i {
-    margin-right: 5px;
-}
-.contact-form label {
-    opacity: 0.7;
-}
-.contact-form textarea {
-    resize: vertical;
-}
-.hint-text {
-    font-size: 15px;
-    padding-bottom: 20px;
-    opacity: 0.6;
+.checkout-table tfoot #total-description {
+  color: grey;
 }
 
 

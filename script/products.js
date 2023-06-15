@@ -70,34 +70,32 @@ let products = JSON.parse(localStorage.getItem("product-list")) ?
                 price: 199.99
             }
         ]));
+// products.js
+let cart = []; // cart
+
+const prod = document.getElementById("prod");
+prod.innerHTML = '';
+localStorage.setItem('checkout-list', JSON.stringify(cart));
 
 function displayProducts(products) {
-    const prod = document.getElementById("prod");
-    prod.innerHTML = '';
-
-    products.forEach((product) => {
-        prod.innerHTML += `
-            <div class="card text-center" style="width: 100%;">
-                <img src="${product.image}" class="card-img-top" alt="Product Image" loading='lazy'>
-                <div class="card-body">
-                    <h5 class="card-title text-center">${product.name}</h5>
-                    <p class="card-text text-center">${product.description}</p>
-                    <p class="card-text text-center">Price: R${product.price}</p>
-                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#checkoutModal">Add to Cart</button>
-                </div>
-            </div>`;
-    });
-
-    
-    let checkoutModal = document.getElementById("checkoutModal");
-    // Add to Cart button
-    let addToCartButtons = document.querySelectorAll(".btn.btn-primary[data-bs-toggle='modal']");
-    addToCartButtons.forEach((button) => {
-        button.addEventListener("click", function () {
-            let modalInstance = bootstrap.Modal.getInstance(checkoutModal);
-            modalInstance.hide();
+    try {
+        products.forEach((product) => {
+            prod.innerHTML += `
+                <div class="card text-center" style="width: 100%;">
+                    <img src="${product.image}" class="card-img-top" alt="Product Image" loading='lazy'>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">${product.name}</h5>
+                        <p class="card-text text-center">${product.description}</p>
+                        <p class="card-text text-center">Price: R${product.price}</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#checkoutModal" onclick='addToCart(${JSON.stringify(product)})'>Add to Cart</button>
+                    </div>
+                </div>`;
+                // cart.push(product)
+                // localStorage.setItem('checkout-list', JSON.stringify(cart))
         });
-    });
+    } catch (e) {
+        location.reload();
+    }
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -105,10 +103,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const filterButton = document.getElementById("filterButton");
     filterButton.addEventListener("click", function () {
-        const maxPrice = 200; 
+        const maxPrice = 200;
         const filteredProducts = products.filter(product => product.price < maxPrice);
         displayProducts(filteredProducts);
     });
 });
 
+function addToCart(item) {
+    cart.push(item)
+    console.log(cart);
+    localStorage.setItem('checkout-list', JSON.stringify(cart))
+}
 
