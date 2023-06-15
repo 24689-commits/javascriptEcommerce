@@ -7,9 +7,8 @@ let content = `
         <div class="row">
             <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center">
                 <h1 id='grains'>AP Grains</h1>
-                <p class="lead" id='lead'>Cinga into eCatchy bra oyhini</p>
-                <p class="lead" id='lead'>Lorem Ipsum dolor sit amet. Lorem Ipsum dolor sit amet.</p>
-                <p class="lead" id='lead'>Lorem Ipsum dolor sit amet. Lorem Ipsum dolor sit amet.</p>
+                <p class="lead" id='lead'>Awaken your senses at our cozy coffee haven,</p>
+                <p class="lead" id='lead'>where aromatic brews and delightful flavors blend to create a caffeine-infused paradise</p>
                 <p><a href="#about" class="btn btn-primary shadow mr-2">About Us</a></p>
             </div>
             <div class="col-lg-6 order-1 order-lg-2 d-flex justify-content-center align-items-center">

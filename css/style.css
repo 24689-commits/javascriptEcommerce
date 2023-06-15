@@ -18,6 +18,7 @@ body{
 h1{
     color: rgba(7, 0, 8, 0.863);
     size: 2rem;
+    font-weight: bold;
 }
 p{
     color: rgb(103, 125, 135);
@@ -165,15 +166,24 @@ p{
   #about{
     padding-top: 3rem;
     padding-bottom: 2rem;
+    font-weight: bold;
+    
+
   }
 
   .navbar :hover{
       color:red;
       transform: .4s;
+      background-color: grey;
   }
   #lead{
     font-size: 1.5rem;
     color: white;
+    text-align: center;
+  }
+  .navbar{
+    background-color: rgb(149, 149, 225)!important;
+    color: navy;
   }
 
 
@@ -261,9 +271,35 @@ p{
       width: 80%;
     }
   }
+/* amdmin page */
 
 
-
-
-
-
+  @media (max-width: 767px) {
+    #tblAdmin th:not(:first-child):not(:nth-child(2)):not(:nth-child(5)):not(:last-child) {
+      display: none;
+    }
+    #tblAdmin td:not(:first-child):not(:nth-child(2)):not(:nth-child(5)):not(:last-child) {
+      display: none;
+    }
+    
+    #tblAdmin td:last-child {
+      width: auto;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    #tblAdmin td:last-child .btn {
+      display: block;
+      margin-bottom: 5px;
+    }
+  }
+  
+  @media (max-width: 350px) {
+    #tblAdmin th:not(:first-child):not(:nth-child(2)):not(:last-child) {
+      display: none;
+    }
+    #tblAdmin td:not(:first-child):not(:nth-child(2)):not(:last-child) {
+      display: none;
+    }
+  }
+  
