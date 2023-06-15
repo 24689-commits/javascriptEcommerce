@@ -1,41 +1,48 @@
+let addProductModal = new bootstrap.Modal(document.getElementById("modal"));
+let productDescription = document.querySelector("#itemDescription");
+let productPrice = document.querySelector("#itemPrice");
+let image = document.querySelector("#itemImage");
 let productList = document.querySelector("#tblAdmin tbody");
 let productData = JSON.parse(localStorage.getItem("product-list")) || [];
 let itemId = productData.length > 0 ? productData[productData.length - 1].id + 1 : 1;
 
 function addProduct() {
-  let productDescription = document.querySelector("#itemDescription");
-  let productContent = document.querySelector("#itemContent");
-  let image = document.querySelector("#itemImage");
+  if (productDescription.value && productPrice.value && image.value) {
+    const existingIds = productData.map(item => item.id);
+    let newId = 1;
+    while (existingIds.includes(newId)) {
+      newId++;
+    }
 
-  if (productDescription.value && productContent.value && image.value) {
     productData.push(
-      new Product(itemId, image.value, productDescription.value, productContent.value, new Date())
+      new Product(newId, image.value, productDescription.value, productPrice.value, new Date())
     );
     localStorage.setItem("product-list", JSON.stringify(productData));
 
     clearForm();
     displayProducts();
-    itemId++;
+    closeModal();
   } else {
     alert("Please fill in all fields");
   }
 }
 
-function Product(idItem, img, desc, cont, dt) {
+function sortTableById() {
+  productData.sort((a, b) => a.id - b.id);
+  displayProducts();
+}
+
+function Product(idItem, img, desc, price, dt) {
   this.id = idItem;
   this.image = img;
   this.description = desc;
-  this.content = cont;
+  this.price = price;
   this.date = dt;
 }
 
 function clearForm() {
-  let productDescription = document.querySelector("#itemDescription");
-  let productContent = document.querySelector("#itemContent");
-  let image = document.querySelector("#itemImage");
-
   productDescription.value = "";
-  productContent.value = "";
+  productPrice.value = "";
   image.value = "";
 }
 
@@ -48,13 +55,33 @@ function displayProducts() {
       <td>${item.id}</td>
       <td><img src="${item.image}" alt="Product Image" width="50"></td>
       <td>${item.description}</td>
-      <td>${item.content}</td>
+      <td>${item.price}</td>
       <td>
-        <button class="btn btn-primary btn-edit" data-id="${item.id}" onclick="editProduct(${item.id})">Edit</button>
-        <button class="btn btn-danger btn-delete" data-id="${item.id}" onclick="deleteProduct(${item.id})">Delete</button>
+        <button class="btn btn-primary btn-edit" data-id="${item.id}">Edit</button>
+        <button class="btn btn-danger btn-delete" data-id="${item.id}">Delete</button>
       </td>
     `;
     productList.appendChild(row);
+  });
+
+  attachEventListeners();
+}
+
+function attachEventListeners() {
+  let deleteButtons = document.querySelectorAll(".btn-delete");
+  deleteButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const productId = parseInt(button.dataset.id);
+      deleteProduct(productId);
+    });
+  });
+
+  let editButtons = document.querySelectorAll(".btn-edit");
+  editButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const productId = parseInt(button.dataset.id);
+      editProduct(productId);
+    });
   });
 }
 
@@ -70,15 +97,16 @@ function deleteProduct(productId) {
 function editProduct(productId) {
   let product = productData.find((item) => item.id === productId);
   if (product) {
-    let productDescription = document.querySelector("#itemDescription");
-    let productContent = document.querySelector("#itemContent");
-    let image = document.querySelector("#itemImage");
-
-    productDescription.value = product.description;
-    productContent.value = product.content;
-    image.value = product.image;
     itemId = product.id;
+    image.value = product.image;
+    productDescription.value = product.description;
+    productPrice.value = product.price;
+    addProductModal.show();
   }
+}
+
+function closeModal() {
+  addProductModal.hide();
 }
 
 displayProducts();

@@ -35,6 +35,9 @@
           <li class="nav-item">
             <a class="nav-link active" href="./admin.html">Admin</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contactUsModal">Contact Us</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -44,6 +47,7 @@
   <div class="container">
     <!-- Add a button to open the modal -->
     <button onclick="addProductModal.show()" class="btn btn-primary">Add Item</button>
+    <button onclick="sortTableById()" class="btn btn-secondary">Sort by ID</button>
 
     <!-- The table -->
     <table id="tblAdmin" class="table">
@@ -52,49 +56,74 @@
           <th>#id</th>
           <th>Image</th>
           <th>Description</th>
-          <th>Content</th>
+          <th>Price</th>
           <th>Action</th>
         </tr>
       </thead>
       <tbody>
-        <!-- Table rows will be dynamically added here -->
+        
       </tbody>
     </table>
   </div>
 
   <!-- The modal -->
-  <div id="modal" class="modal">
+<div id="modal" class="modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">Add Item</h2>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="itemImage" class="form-label">Image:</label>
+            <input type="text" class="form-control" id="itemImage">
+          </div>
+          <div class="mb-3">
+            <label for="itemDescription" class="form-label">Description:</label>
+            <input type="text" class="form-control" id="itemDescription">
+          </div>
+          <div class="mb-3">
+            <label for="itemPrice" class="form-label">Price:</label>
+            <input type="text" class="form-control" id="itemPrice">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" onclick="addProduct()">Add</button>
+        <button type="button" class="btn btn-secondary" onclick="closeModal()">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+  <div class="modal fade" id="contactUsModal" tabindex="-1" aria-labelledby="contactUsModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h2 class="modal-title">Add Item</h2>
+          <h5 class="modal-title" id="contactUsModalLabel">Contact Us</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form>
-            <div class="mb-3">
-              <label for="itemImage" class="form-label">Image:</label>
-              <input type="text" class="form-control" id="itemImage">
-            </div>
-            <div class="mb-3">
-              <label for="itemDescription" class="form-label">Description:</label>
-              <input type="text" class="form-control" id="itemDescription">
-            </div>
-            <div class="mb-3">
-              <label for="itemContent" class="form-label">Content:</label>
-              <input type="text" class="form-control" id="itemContent">
-            </div>
-          </form>
+          <p>For any inquiries or assistance, please contact us using the information provided below:</p>
+          <ul>
+            <li>Email: apgrains@gmail.com</li>
+            <li>Phone: 021-456-7890</li>
+            <li>Address: 123 Bree Street, Cape Town, South Africa</li>
+          </ul>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" onclick="addProduct()">Add</button>
-          <button type="button" class="btn btn-secondary" onclick="closeModal()">Cancel</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
   </div>
 
   <footer>
-    <p>&copy; 2023</p>
+    <p>© 2023 AP Grains. All rights reserved.</p>
   </footer>
 
   <!-- bootstrap script -->

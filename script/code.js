@@ -57,5 +57,7 @@ Join us at our coffee shop and embark on a journey of taste and discovery. Exper
 
 
 
+
+
 `;
 landElement.innerHTML = content;
