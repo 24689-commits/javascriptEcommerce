@@ -7,7 +7,7 @@ let productData = JSON.parse(localStorage.getItem("product-list")) || [];
 let itemId = productData.length > 0 ? productData[productData.length - 1].id + 1 : 1;
 
 function addProduct() {
-  if (productDescription.value && productPrice.value && image.value) {
+  if (productDescription.value && productPrice.value && image.value ) {
     const existingIds = productData.map(item => item.id);
     let newId = 1;
     while (existingIds.includes(newId)) {
@@ -97,6 +97,7 @@ function deleteProduct(productId) {
 function editProduct(productId) {
   let product = productData.find((item) => item.id === productId);
   if (product) {
+
     itemId = product.id;
     image.value = product.image;
     productDescription.value = product.description;

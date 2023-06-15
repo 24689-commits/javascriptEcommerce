@@ -2,14 +2,14 @@ let landElement = document.getElementById("land");
 
 // Landing page
 let content = `
-<section class="bg-light d-flex align-items-center justify-content-center" style="background-image: url('https://i.postimg.cc/jqyXpq8p/background-kofu.jpg'); background-size: cover; background-position: center; loading='lazy' ">
+<section class="bg-light d-flex align-items-center justify-content-center" style="background-image: url('https://i.postimg.cc/d1tKBZgW/images.jpg'); background-size: cover; background-position: center; loading='lazy' ">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center">
-                <h1>KwaKofu</h1>
-                <p class="lead">Cinga into eCatchy bra oyhini</p>
-                <p class="lead">Lorem Ipsum dolor sit amet. Lorem Ipsum dolor sit amet.</p>
-                <p class="lead">Lorem Ipsum dolor sit amet. Lorem Ipsum dolor sit amet.</p>
+                <h1 id='grains'>AP Grains</h1>
+                <p class="lead" id='lead'>Cinga into eCatchy bra oyhini</p>
+                <p class="lead" id='lead'>Lorem Ipsum dolor sit amet. Lorem Ipsum dolor sit amet.</p>
+                <p class="lead" id='lead'>Lorem Ipsum dolor sit amet. Lorem Ipsum dolor sit amet.</p>
                 <p><a href="#about" class="btn btn-primary shadow mr-2">About Us</a></p>
             </div>
             <div class="col-lg-6 order-1 order-lg-2 d-flex justify-content-center align-items-center">
