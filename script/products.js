@@ -98,6 +98,7 @@ function displayProducts(products) {
     }
 }
 
+
 document.addEventListener("DOMContentLoaded", function () {
     displayProducts(products);
 
@@ -113,5 +114,6 @@ function addToCart(item) {
     cart.push(item)
     console.log(cart);
     localStorage.setItem('checkout-list', JSON.stringify(cart))
+    alert('You have successfully added the item to cart')
 }
 
