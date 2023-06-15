@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", function() {
 let landElement = document.getElementById("land");
 
 // Landing page
@@ -58,5 +59,30 @@ Join us at our coffee shop and embark on a journey of taste and discovery. Exper
 
 
 
+
 `;
 landElement.innerHTML = content;
+let aboutButton = document.querySelector('a[href="#about"]');
+let aboutButtonParent = aboutButton.parentElement;
+
+// Create the "Contact Us" button element
+let contactButton = document.createElement("a");
+contactButton.classList.add("btn", "btn-primary", "shadow", "mr-2", "ml-2");
+contactButton.setAttribute("data-bs-toggle", "modal");
+contactButton.setAttribute("data-bs-target", "#exampleModal");
+contactButton.setAttribute("data-bs-whatever", "@mdo");
+contactButton.textContent = "Contact Us";
+
+
+aboutButtonParent.insertBefore(contactButton, aboutButton.nextSibling);
+
+let contactModal = new bootstrap.Modal(document.getElementById("exampleModal"));
+contactButton.addEventListener("click", function() {
+  contactModal.show();
+});
+});
+
+
+
+
+  
