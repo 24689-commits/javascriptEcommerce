@@ -3,7 +3,7 @@ let landElement = document.getElementById("land");
 
 // Landing page
 let content = `
-<section class="bg-light d-flex align-items-center justify-content-center" style="background-image: url('https://i.postimg.cc/d1tKBZgW/images.jpg'); background-size: cover; background-position: center; loading='lazy' ">
+<section class="bg-light d-flex align-items-center justify-content-center" style="background-image: url('https://assets-static-prod.displate.com/next-assets/public/images/pdp/HeroSlider/alone/bcg/1_bg_desktop.jpg'); background-size: cover; background-position: center; loading='lazy' ">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center">
@@ -13,7 +13,7 @@ let content = `
                 <p><a href="#about" class="btn btn-primary shadow mr-2">About Us</a></p>
             </div>
             <div class="col-lg-6 order-1 order-lg-2 d-flex justify-content-center align-items-center">
-                <img src="https://i.postimg.cc/pLFtvHzg/Coffee-1.jpg" alt="landing image" class="img-fluid">
+                <img src="https://i.postimg.cc/6QkGhDNx/Coffee-1-1.jpg" alt="landing image" class="img-fluid">
             </div>
         </div>
     </div>
@@ -65,7 +65,6 @@ landElement.innerHTML = content;
 let aboutButton = document.querySelector('a[href="#about"]');
 let aboutButtonParent = aboutButton.parentElement;
 
-// Create the "Contact Us" button element
 let contactButton = document.createElement("a");
 contactButton.classList.add("btn", "btn-primary", "shadow", "mr-2", "ml-2");
 contactButton.setAttribute("data-bs-toggle", "modal");

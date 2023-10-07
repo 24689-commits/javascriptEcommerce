@@ -71,7 +71,7 @@ let products = JSON.parse(localStorage.getItem("product-list")) ?
             }
         ]));
 // products.js
-let cart = []; // cart
+let cart = []; 
 
 const prod = document.getElementById("prod");
 prod.innerHTML = '';
