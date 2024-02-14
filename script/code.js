@@ -3,57 +3,62 @@ let landElement = document.getElementById("land");
 
 // Landing page
 let content = `
-<section class="bg-light d-flex align-items-center justify-content-center" style="background-image: url('https://assets-static-prod.displate.com/next-assets/public/images/pdp/HeroSlider/alone/bcg/1_bg_desktop.jpg'); background-size: cover; background-position: center; loading='lazy' ">
+<section class="hero-section">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center">
-                <h1 id='grains'>AP Grains</h1>
-                <p class="lead" id='lead'>Awaken your senses at our cozy coffee haven,</p>
-                <p class="lead" id='lead'>where aromatic brews and delightful flavors blend to create a caffeine-infused paradise</p>
-                <p><a href="#about" class="btn btn-primary shadow mr-2">About Us</a></p>
+            <div class="col-lg-6 d-flex flex-column justify-content-center">
+                <h1 class="hero-title">Welcome to AP Grains</h1>
+                <p class="hero-description">Indulge in the finest selection of coffee and grains</p>
+                <p class="hero-description">Experience the perfect blend of aroma and flavor</p>
             </div>
-            <div class="col-lg-6 order-1 order-lg-2 d-flex justify-content-center align-items-center">
-                <img src="https://i.postimg.cc/6QkGhDNx/Coffee-1-1.jpg" alt="landing image" class="img-fluid">
+            <div class="col-lg-6 d-flex justify-content-center">
+                <img src="https://i.ibb.co/d6cX259/ae188b259dfd8742412a6ad4aefb729d-removebg-preview.png" alt="coffee image" class="img-fluid">
             </div>
         </div>
     </div>
 </section>
 
 
+
 <!-- About and featured -->
 
 
-<h1  class="text-center" id='about'>About Us</h1>
-<p>Our coffee shop is dedicated to providing the highest quality coffee experience to our customers. We source our coffee beans from the finest coffee-growing regions around the world and carefully roast them to bring out their unique flavors and aromas. <br> <br>
-
-At our coffee shop, we believe in the art of coffee-making. Our skilled baristas are passionate about their craft and strive to create the perfect cup of coffee every time. Whether you prefer a rich and bold espresso or a smooth and creamy cappuccino, we have a wide selection of specialty coffee beverages to satisfy your cravings.<br> <br>
-
-But it's not just about the coffee. We also take pride in creating a welcoming and cozy atmosphere for our customers. Our coffee shop is designed to be a gathering place for coffee lovers, where you can relax, socialize, or catch up on work while enjoying your favorite brew.<br> <br>
-
-Join us at our coffee shop and embark on a journey of taste and discovery. Experience the warmth of our hospitality, the aroma of freshly brewed coffee, and the joy of a truly exceptional coffee experience.</p>
-<h1 id="products" class="text-center">Featured</h1>
-<div class="row mt-5">
-    <div class="col-lg-4 text-center">
-        <img src="https://i.postimg.cc/1tLCmqcQ/Alesso-Platinum-Coffee-Beans-1kg-Decaf.webp" alt="item image" class="img-fluid">
-        <h3>DECAF</h3>
-        <p>Nutty, caramel Round Body</p>
-        <p class="text-primary">R285.00</p>
+<section class="about-section">
+    <div class="container">
+        <h1 class="text-center" id="about">About Us</h1>
+        <p>Our coffee shop is dedicated to providing the highest quality coffee experience to our customers. We source our coffee beans from the finest coffee-growing regions around the world and carefully roast them to bring out their unique flavors and aromas.</p>
+        <p>At our coffee shop, we believe in the art of coffee-making. Our skilled baristas are passionate about their craft and strive to create the perfect cup of coffee every time. Whether you prefer a rich and bold espresso or a smooth and creamy cappuccino, we have a wide selection of specialty coffee beverages to satisfy your cravings.</p>
+        <p>But it's not just about the coffee. We also take pride in creating a welcoming and cozy atmosphere for our customers. Our coffee shop is designed to be a gathering place for coffee lovers, where you can relax, socialize, or catch up on work while enjoying your favorite brew.</p>
+        <p>Join us at our coffee shop and embark on a journey of taste and discovery. Experience the warmth of our hospitality, the aroma of freshly brewed coffee, and the joy of a truly exceptional coffee experience.</p>
     </div>
-    
-    <div class="col-lg-4 text-center">
-        <img src="https://i.postimg.cc/2y74sb0T/Alesso-Platinum-Coffee-Beans-1-kg-Argento-Italian-Espresso.webp" alt="item image" class="img-fluid">
-        <h3>ARGENTO</h3>
-        <p>Cherry, Juicy, Creamy, Cocoa, Nutty</p>
-        <p class="text-primary">R269.00</p>
+</section>
+
+<section id="products" class="text-center">
+    <h1>Featured</h1>
+    <div class="row mt-5">
+        <div class="col-lg-4 product-item">
+            <img src="https://i.ibb.co/GTCCsZq/QhooN19.jpg" alt="item image" class="img-fluid">
+            <h3>NOMADIC</h3>
+            <p>Dark Roast</p>
+            <p class="text-primary">R285.00</p>
+        </div>
+
+        <div class="col-lg-4 product-item">
+            <img src="https://i.ibb.co/Npmt8nV/guJpm10.jpg" alt="item image" class="img-fluid">
+            <h3>LONE LIGHT</h3>
+            <p>Dark Roast</p>
+            <p class="text-primary">R269.00</p>
+        </div>
+
+        <div class="col-lg-4 product-item">
+            <img src="https://i.ibb.co/mqsbrn1/DCrpZ2x.jpg" class="img-fluid">
+            <h3>PUBLIC GOODS COFFEE</h3>
+            <p>100% Arabica Blend</p>
+            <p class="text-primary">R310.00</p>
+        </div>
     </div>
-    
-    <div class="col-lg-4 text-center">
-        <img src="https://i.postimg.cc/PJjWVzQP/Alesso-Platinum-Coffee-Beans-1-kg-Argento-Italian-Espresso.webp" class="img-fluid">
-        <h3>ARGENTO Expresso</h3>
-        <p>Cherry, Juicy, Creamy, Cocoa, Nutty</p>
-        <p class="text-primary">R310.00</p>
-    </div>
-</div>
+</section>
+
 
 
 

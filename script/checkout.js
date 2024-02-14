@@ -5,7 +5,6 @@ let totalDescription = document.getElementById('total-description');
 let totalPrice = 0;
 console.log(cart);
 cart.forEach((item) => {
-    // let { id, name, price } = item;
    
     totalPrice += parseFloat(item.price);
     console.log(totalPrice);
