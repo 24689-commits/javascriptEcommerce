@@ -8,66 +8,45 @@ let products = JSON.parse(localStorage.getItem("product-list")) ?
         [
             {
                 id: 1,
-                name: 'DECAF',
-                image: 'https://i.postimg.cc/1tLCmqcQ/Alesso-Platinum-Coffee-Beans-1kg-Decaf.webp',
-                description: 'Nutty, Caramel Round Body',
+                name: 'LONE LIGHT',
+                image: 'https://i.ibb.co/Npmt8nV/guJpm10.jpg',
+                description: 'Dark Roast',
                 price: 170.99
             },
             {
                 id: 2,
-                name: 'ARABICA',
-                image: 'https://i.postimg.cc/t4C5HkQ6/1kg-Brazil-Medium-Dark-Roast-Beans.jpg',
-                description: '100% Arabica coffee',
+                name: 'NOMADIC',
+                image: 'https://i.ibb.co/GTCCsZq/QhooN19.jpg',
+                description: 'Dark Roast',
                 price: 109.99
             },
             {
                 id: 3,
-                name : 'Strictly coffee',
-                image: 'https://i.postimg.cc/cLG18tHF/Strictly-Coffee-Jackson-Brown-Blend-Ground-1kg.jpg',
-                description: '1KG Jackson Brown',
+                name : 'PUBLIC GOODS COFFEE',
+                image: 'https://i.ibb.co/mqsbrn1/DCrpZ2x.jpg',
+                description: '100% Arabica Blend',
                 price: 209.99
             },
             {
                 id: 4,
-                name : 'ARABICA',
-                image: 'https://i.postimg.cc/pLGBVjR6/1kg-Brazil-Medium-Roast-Beans.jpg',
-                description: 'Italiano Espresso',
+                name : 'FIVE WATT',
+                image: 'https://i.ibb.co/xSPdfsC/1ZuDWS5.jpg',
+                description: 'House Blend',
                 price: 199.99
             },
             {
                 id: 5,
-                name : 'Strictly coffee',
-                image: 'https://i.postimg.cc/kMZgqpd3/Strictly-Coffee-Jackson-Brown-Blend-Ground-1kg-Uganda.jpg',
-                description: '1KG Jackson Brown',
+                name : 'ESPRESSO',
+                image: 'https://i.ibb.co/ggTgtLW/1VsTpQX.jpg',
+                description: '1Medium Roast',
                 price: 209.99
             },
             {
                 id: 6,
-                name : 'ARGENTO',
-                image: 'https://i.postimg.cc/PJjWVzQP/Alesso-Platinum-Coffee-Beans-1-kg-Argento-Italian-Espresso.webp',
-                description: 'Cherry, Juicy, Creamy',
+                name : 'BOHEMIAN',
+                image: 'https://i.ibb.co/FbR50Sb/xuE4Khm.jpg',
+                description: 'Indonesia Sumatra',
                 price: 279.99
-            },
-            {
-                id: 7,
-                name : 'Strictly coffee',
-                image: 'https://i.postimg.cc/kMZgqpd3/Strictly-Coffee-Jackson-Brown-Blend-Ground-1kg-Uganda.jpg',
-                description: '1KG Jackson Brown',
-                price: 209.99
-            },
-            {
-                id: 8,
-                name : 'ARGENTO',
-                image: 'https://i.postimg.cc/PJjWVzQP/Alesso-Platinum-Coffee-Beans-1-kg-Argento-Italian-Espresso.webp',
-                description: 'Medium to dark, Roast beans',
-                price: 279.99
-            },
-            {
-                id: 9,
-                name : 'ARABICA',
-                image: 'https://i.postimg.cc/MKYD444x/1kg-Home-Blend-Coffee-Medium-Roast-Beans.jpg',
-                description: 'Home Roast',
-                price: 199.99
             }
         ]));
 // products.js
